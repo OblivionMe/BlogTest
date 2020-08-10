@@ -38,7 +38,7 @@ export default class SearchComponent extends React.Component {
         <br />
         <input
           name="searchInput"
-          placeholder="search blogger....."
+          placeholder="search blogger name..."
           value={this.state.searchInput || ""}
           onChange={this.handleChange}
           label="Search"

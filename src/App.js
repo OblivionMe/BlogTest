@@ -13,9 +13,9 @@ class App extends Component {
       Title: '',
       BlogContent: '',
       items: [
-        {BlogUser: 'sid', Title: 'my diary', BlogContent : 'my first entry'},
+        {BlogUser: 'test', Title: 'my diary', BlogContent : 'my first entry'},
         {BlogUser: 'user1', Title: 'book', BlogContent : 'second book'},
-        {BlogUser: 'user2', Title: 'list', BlogContent : 'table needed'},
+        {BlogUser: 'check', Title: 'list', BlogContent : 'table needed'},
       
       ],
       filteredData: [],
