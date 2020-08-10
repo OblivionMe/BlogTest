@@ -20,26 +20,33 @@ function CreateBlog(props) {
                 </Modal.Header>
                 <Modal.Body>
                     <div id="Form">
-                        <h3>write a new blog to the table:</h3>
+                        <h3>write a new blog</h3>
                         <form onSubmit={props.handleFormSubmit}>
-                            <label htmlFor="BlogUser">
-                                BlogUser:
-          <input id="BlogUser" value={props.newBlogUser}
-                                    type="text" name="BlogUser"
-                                    onChange={props.handleInputChange} />
-                            </label>
-                            <label for="Title">
-                                Title:
-          <input id="title" value={props.newTitle}
-                                    type="text" name="Title"
-                                    onChange={props.handleInputChange} />
-                            </label>
-                            <label for="BlogContent">       
-                                Write Blog: 
-          <textarea id="BlogContent" value={props.newBlogContent}
-                                    type="text" name="BlogContent"
-                                    onChange={props.handleInputChange} />
-                            </label>
+                            <div>
+                                <label htmlFor="BlogUser">
+                                    <p>BlogUser:</p>
+                                    <input id="BlogUser" value={props.newBlogUser}
+                                        type="text" name="BlogUser"
+                                        onChange={props.handleInputChange}
+                                        style={{ marginRight: '5px' }} />
+                                </label>
+                                <label for="Title">
+                                    <p>Title:</p>
+                                    <input id="title"
+                                        value={props.newTitle}
+                                        type="text" name="Title"
+                                        onChange={props.handleInputChange} />
+                                </label>
+                            </div>
+                            <div>
+                                <label for="BlogContent">
+                                    <p>Write Blog:</p>
+                                    <textarea id="BlogContent" rows="25" cols="35"
+                                        value={props.newBlogContent}
+                                        type="text" name="BlogContent"
+                                        onChange={props.handleInputChange} />
+                                </label>
+                            </div>
                             <div>
                                 <button type="submit" value="Submit" onClick={handleClose}>Add Item</button>
                             </div>
