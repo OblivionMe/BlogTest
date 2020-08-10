@@ -20,12 +20,7 @@ export default class SearchComponent extends React.Component {
     let items = this.props.data.filter(value => {
       return (
         value.BlogUser.toLowerCase().includes(searchInput.toLowerCase()) 
-        // ||
-        // value.status.toLowerCase().includes(searchInput.toLowerCase()) ||
-        // value.visits
-        //   .toString()
-        //   .toLowerCase()
-        //   .includes(searchInput.toLowerCase())
+
       );
     }
     );
