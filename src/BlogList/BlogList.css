@@ -1,0 +1,29 @@
+/* table,td {
+    border: 1px solid black;
+    margin: 1em;
+    background-color: aquamarine;
+  }
+
+  .container {
+      text-align: center;
+      margin: 2em;
+  }
+  .buttonAdd{
+      background-color:cyan ;
+      border: darkcyan;
+      border-color: black;
+      margin-left: 55em;
+      margin-right: 10em;
+      margin-top: 1em;
+  } */
+  td{
+      width: 20%;
+  }
+
+  #wrapup{
+    width: 100px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
