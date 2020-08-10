@@ -1,5 +1,6 @@
 import React, { useState, setShow } from 'react';
 import { Button, Modal } from 'react-bootstrap';
+import './createBlog.css';
 
 function CreateBlog(props) {
     const [show, setShow] = useState(false);
@@ -10,10 +11,11 @@ function CreateBlog(props) {
 
     return (
         <div>
+            <div class="button-add">
             <Button variant="primary" onClick={handleShow}>
                 Add blog
-      </Button>
-
+            </Button>
+            </div>
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
                     <Modal.Title>Modal heading</Modal.Title>
